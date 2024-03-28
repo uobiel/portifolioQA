@@ -240,6 +240,7 @@ header > p {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-services {
@@ -307,6 +308,56 @@ header > p {
     background-size: auto 40%;
 }
 
+#sessao-quatro {
+    background-color: #212135;
+    margin-top: 100px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha-contato {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+    padding: 10px;
+}
+
+.linkedin {
+    background-image: url("img/brandico_linkedin-rect.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: auto 100%;
+    p{
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}
+
+.email {
+    background-image: url("img/dashicons_email.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: auto 100%;
+    p{
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}
+
+.whatsapp {
+    background-image: url("img/bi_telephone-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: auto 100%;
+    p{
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .main {
         width: 100%;
@@ -332,7 +383,10 @@ header > p {
     }
 
     .cardS {
+        width: 300px;
         height: 150px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .linha {
@@ -342,5 +396,9 @@ header > p {
 
     .cardS > p {
         padding-left: 80px;
+    }
+
+    #sessao-tres {
+        padding: 0;
     }
 }
