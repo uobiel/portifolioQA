@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: Arial;
+}
+
+@keyframes inicio {
+    0% {left: -200%; opacity: 0;}
+    100% {left: -0%; opacity: 0,5;} 
+}
+
+@keyframes cards {
+    0%{height: 0px;}
+    50%{height: 100px;}
+    100%{height: 200px;}
+}
+
+@keyframes button {
+    0%{background-color: #629de0;}
+    50%{background-color: #629de0d8;}
+    100%{background-color: #629de0c5;}
+}
+
+.page {
+    position: absolute;
+    animation-name: inicio;
+    animation-duration: 1s;
+}
+
+body {
+    background-color: #171728;
+}
+
+header {
+    color: #629CE0;
+    padding: 20px;
+}
+
+header > p {
+    margin-left: 20px;
+}
+
+#about {
+    background-color: #212135;
+    color: #F5F5F5;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-reverse {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.a1 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.a2 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.a3 {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+#my-photo {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 200%;
+    background-color: #629CE0;
+    background-image: url("img/Screenshot_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+}
+
+#button-about-me {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 8px;
+    border: none;
+    background-color: #629CE0;
+    color: white;
+    background-image: url("img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    padding-right: 30px;
+    background-size: auto 70%;
+    cursor: pointer;
+}
+
+#button-about-me:hover {
+    transform: scale(1.04);
+    animation-name: button;
+    animation-duration: 0.5s;
+    background-color: #629de0c5;
+}
+
+#sessao-dois {
+    background-color: #212135;
+    margin-top: 100px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-name {
+    color: #629CE0;
+    margin-bottom: 20px;
+}
+
+.texts {
+    color: #ffff;
+}
+
+.apresentacao {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.anos {
+    font-size: 90px;
+    margin-right: 20px;
+    color: #629CE0;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.coluna-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    background-color: #629CE0;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+    animation-name: cards;
+    animation-duration: 0.9s;
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card1 {
+    background-image: url("img/cypress.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card2 {
+    background-image: url("img/javascript-js-square.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card3 {
+    background-image: url("img/cogs.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card4 {
+    background-image: url("img/github.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.descricao-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* background-color: #b1b1ce; */
+    color: #171728;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.descricao-card > p {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .about-text {
+        margin-top: 15px;
+    }
+
+    .coluna-cards {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
