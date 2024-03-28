@@ -362,6 +362,11 @@ header > p {
     }
 }
 
+.whatsapp:hover, .linkedin:hover, .email:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .main {
         width: 100%;
