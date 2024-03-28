@@ -323,6 +323,7 @@ header > p {
     justify-content: space-around;
     color: white;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .linkedin {
@@ -400,5 +401,13 @@ header > p {
 
     #sessao-tres {
         padding: 0;
+    }
+
+    .linha-contato {
+        justify-content: start;
+    }
+
+    .whatsapp, .linkedin, .email {
+        margin-top: 15px;
     }
 }
