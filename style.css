@@ -99,24 +99,27 @@ header > p {
     background-size: auto 110%;
 }
 
-#button-about-me {
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    max-width: 120px;
+.container-buttons {
+    margin-top: 20px;
+}
+
+#button-download {
+    margin: 15px;
+    padding: 10px 40px 10px 10px; /* ajuste o valor conforme necessário para controlar a largura do botão */
     border-radius: 8px;
     border: none;
     background-color: #629CE0;
     color: white;
-    background-image: url("img/user.svg");
+    background-image: url("img/download.svg");
     background-repeat: no-repeat;
     background-position: 95%;
-    padding-right: 30px;
     background-size: auto 70%;
     cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
 }
 
-#button-about-me:hover {
+#button-download:hover {
     transform: scale(1.04);
     animation-name: button;
     animation-duration: 0.5s;
