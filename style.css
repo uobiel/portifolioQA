@@ -401,6 +401,15 @@ header > p {
     background-size: auto 40%;
 }
 
+.dev1, .dev2, .dev3, .dev4 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.dev1:hover, .dev2:hover, .dev3:hover, .dev4:hover {
+    transform: scale(1.02);
+}
+
 .devButton:hover, .qaButton:hover {
     transform: scale(1.1);
     cursor: pointer;
