@@ -401,12 +401,62 @@ header > p {
     background-size: auto 40%;
 }
 
-.dev1, .dev2, .dev3, .dev4 {
+.dev5 {
+    background-image: url("img/notes.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.dev6 {
+    background-image: url("img/management.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.dev7 {
+    background-image: url("img/country.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%; 
+}
+
+.dev8 {
+    background-image: url("img/thermometer.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%; 
+}
+
+.dev9 {
+    background-image: url("img/street.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%; 
+}
+
+.projectsType {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #629de0;
+    color: #629CE0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dev1, .dev2, .dev3, .dev4, .dev5, .dev6, .dev7, .dev8, .dev9 {
     text-align: center;
     cursor: pointer;
 }
 
-.dev1:hover, .dev2:hover, .dev3:hover, .dev4:hover {
+.dev1:hover, .dev2:hover, .dev3:hover, .dev4:hover, .dev5:hover, .dev6:hover, .dev7:hover, .dev8:hover, .dev9:hover {
     transform: scale(1.02);
 }
 
