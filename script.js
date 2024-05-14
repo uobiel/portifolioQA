@@ -1,6 +1,10 @@
 const sessaoDois = document.querySelector("#sessao-dois");
 const cards = document.querySelectorAll(".cards");
 const sections = document.querySelectorAll(".hidden");
+const botaoQA = document.querySelector(".qaButton");
+const botaoDev = document.querySelector(".devButton");
+const paginaUm = document.querySelector(".pageOne");
+const paginaDois = document.querySelector(".pageTwo");
 const contactElements = {
     linkedin: document.querySelector(".linkedin"),
     whatsapp: document.querySelector(".whatsapp"),
@@ -22,3 +26,13 @@ const myObserver = new IntersectionObserver((entries, observer) => {
 });
 
 sections.forEach(section => myObserver.observe(section));
+
+botaoDev.addEventListener('click', function(){
+    paginaUm.style.display = 'none';
+    paginaDois.style.display = 'inline';
+})
+
+botaoQA.addEventListener('click', function(){
+    paginaUm.style.display = 'inline';
+    paginaDois.style.display = 'none';
+})

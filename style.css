@@ -19,6 +19,8 @@ body {
 header {
     color: #629CE0;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header > p {
@@ -364,6 +366,43 @@ header > p {
 
 .whatsapp:hover, .linkedin:hover, .email:hover {
     transform: scale(1.09);
+    cursor: pointer;
+}
+
+.pageTwo {
+    display: none;
+}
+
+.dev1 {
+    background-image: url("img/tic-tac-toe.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.dev2 {
+    background-image: url("img/child-cognition.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.dev3 {
+    background-image: url("img/animal.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.dev4 {
+    background-image: url("img/hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: auto 40%;
+}
+
+.devButton:hover, .qaButton:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }
 
