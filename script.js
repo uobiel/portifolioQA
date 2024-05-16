@@ -15,10 +15,19 @@ const projetoSete = document.querySelector(".dev7");
 const projetoOito = document.querySelector(".dev8");
 const projetoNove = document.querySelector(".dev9");
 
-const contactElements = {
-    linkedin: document.querySelector(".linkedin"),
-    whatsapp: document.querySelector(".whatsapp"),
-    email: document.querySelector(".email")
+const contacts = {
+    linkedin : {
+        element: document.querySelector(".linkedin"),
+        url: 'https://www.linkedin.com/in/wogabriel/'
+    },
+    whatsapp : {
+        element:  document.querySelector(".whatsapp"),
+        url : 'https://wa.me/5551993180317'
+    },
+    email : {
+        element: document.querySelector(".email"),
+        url: 'gabrielantunesemp@gmail.com'
+    } 
 }
 
 const projetos = {
@@ -33,7 +42,8 @@ const projetos = {
     clima: 'https://uobiel.github.io/ProjetoClima/'
 }
 
-contactElements.linkedin.addEventListener('click', () => acessaSite("www.google.com.br"));
+contacts.linkedin.element.addEventListener('click', () => acessaSite(contacts.linkedin.url));
+contacts.whatsapp.element.addEventListener('click', () => acessaSite(contacts.whatsapp.url));
 
 const acessaSite = (url) => {
     window.open(url, '_blank');

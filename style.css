@@ -332,10 +332,13 @@ header > p {
     background-repeat: no-repeat;
     background-position: 0;
     background-size: auto 100%;
-    p{
+    a{
         padding-left: 30px;
         font-size: 20px;
+        text-decoration: none;
+        color: #F5F5F5;
     }
+
 }
 
 .whatsapp {
