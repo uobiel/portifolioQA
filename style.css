@@ -5,7 +5,6 @@
     font-family: Arial;
 }
 
-
 @keyframes button {
     0%{background-color: #629de0;}
     50%{background-color: #629de0d8;}
@@ -462,6 +461,7 @@ header > p {
 
 .dev1:hover, .dev2:hover, .dev3:hover, .dev4:hover, .dev5:hover, .dev6:hover, .dev7:hover, .dev8:hover, .dev9:hover {
     transform: scale(1.02);
+    background-color: #212135;
 }
 
 .devButton:hover, .qaButton:hover {
@@ -519,5 +519,9 @@ header > p {
 
     .whatsapp, .linkedin, .email {
         margin-top: 15px;
+    }
+
+    .devButton, .qaButton {
+        font-size: 12px;
     }
 }
