@@ -179,20 +179,48 @@ header > p {
 }
 
 .card2 {
-    background-image: url("img/javascript-js-square.svg");
+    background-image: url("img/selenium.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 50%;
 }
 
 .card3 {
-    background-image: url("img/cogs.svg");
+    background-image: url("img/javascript-js-square.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 50%;
 }
 
 .card4 {
+    background-image: url("img/java.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card5 {
+    background-image: url("img/postman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card6 {
+    background-image: url("img/sql.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card7 {
+    background-image: url("img/cogs.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+
+.card8 {
     background-image: url("img/github.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -241,7 +269,7 @@ header > p {
 
 .cardS {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: 100px;
     border: 2px solid #629CE0;
     margin: 0; 
@@ -523,5 +551,11 @@ header > p {
 
     .devButton, .qaButton {
         font-size: 13px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
     }
 }
